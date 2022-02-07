@@ -1,0 +1,23 @@
+package com.example.sfgdi.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+
+import com.example.sfgdi.services.GreetingService;
+
+/**
+ * Created by muhamedsuhail on 06-Feb-2022
+ */
+
+@Controller
+public class PropertyInjectedController {
+	
+	@Qualifier("propertyGreetingService")
+	@Autowired
+	public GreetingService greetingService;
+	
+	public String getGreeting() {
+		return greetingService.sayGreeting();
+	}
+}
