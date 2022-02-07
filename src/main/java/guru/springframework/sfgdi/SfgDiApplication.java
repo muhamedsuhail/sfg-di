@@ -1,13 +1,13 @@
-package com.example.sfgdi;
+package guru.springframework.sfgdi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import com.example.sfgdi.controllers.ConstructorInjectedController;
-import com.example.sfgdi.controllers.MyController;
-import com.example.sfgdi.controllers.PropertyInjectedController;
-import com.example.sfgdi.controllers.SetterInjectedController;
+import guru.springframework.sfgdi.controllers.ConstructorInjectedController;
+import guru.springframework.sfgdi.controllers.MyController;
+import guru.springframework.sfgdi.controllers.PropertyInjectedController;
+import guru.springframework.sfgdi.controllers.SetterInjectedController;
 
 @SpringBootApplication
 public class SfgDiApplication {

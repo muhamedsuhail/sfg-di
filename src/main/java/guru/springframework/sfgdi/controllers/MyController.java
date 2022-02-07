@@ -1,4 +1,4 @@
-package com.example.sfgdi.controllers;
+package guru.springframework.sfgdi.controllers;
 
 import org.springframework.stereotype.Controller;
 

@@ -1,10 +1,10 @@
-package com.example.sfgdi.controllers;
+package guru.springframework.sfgdi.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import com.example.sfgdi.services.GreetingService;
+import guru.springframework.sfgdi.services.GreetingService;
 
 /**
  * Created by muhamedsuhail on 07-Feb-2022

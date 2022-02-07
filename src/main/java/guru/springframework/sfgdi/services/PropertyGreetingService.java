@@ -1,4 +1,4 @@
-package com.example.sfgdi.services;
+package guru.springframework.sfgdi.services;
 
 import org.springframework.stereotype.Service;
 
@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class ConstructorGreetingService implements GreetingServiceIfc {
+public class PropertyGreetingService implements GreetingServiceIfc {
 
 	@Override
 	public String sayGreeting() {
-		return "Constructor : Hello World!";
+		return "Property : Hello World!";
 	}
 
 }

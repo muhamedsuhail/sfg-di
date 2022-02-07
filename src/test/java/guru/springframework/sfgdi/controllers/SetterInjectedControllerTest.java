@@ -1,11 +1,11 @@
-package com.example.sfgdi.controllers;
+package guru.springframework.sfgdi.controllers;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.example.sfgdi.services.GreetingService;
+import guru.springframework.sfgdi.services.GreetingService;
 
 /**
  * Created by muhamedsuhail on 07-Feb-2022
