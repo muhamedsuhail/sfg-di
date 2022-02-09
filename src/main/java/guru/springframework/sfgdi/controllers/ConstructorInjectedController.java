@@ -3,7 +3,7 @@ package guru.springframework.sfgdi.controllers;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import guru.springframework.sfgdi.services.GreetingService;
+import guru.springframework.sfgdi.services.GreetingServiceIfc;
 
 /**
  * Created by muhamedsuhail on 07-Feb-2022
@@ -11,9 +11,9 @@ import guru.springframework.sfgdi.services.GreetingService;
 
 @Controller
 public class ConstructorInjectedController {
-	private final GreetingService greetingService;
+	private final GreetingServiceIfc greetingService;
 
-	public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
+	public ConstructorInjectedController(@Qualifier("constructorGreetingService")GreetingServiceIfc greetingService) {
 		this.greetingService = greetingService;
 	}
 	

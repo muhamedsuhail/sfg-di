@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
-import guru.springframework.sfgdi.services.GreetingService;
+import guru.springframework.sfgdi.services.GreetingServiceIfc;
 
 /**
  * Created by muhamedsuhail on 07-Feb-2022
@@ -12,11 +12,11 @@ import guru.springframework.sfgdi.services.GreetingService;
 
 @Controller
 public class SetterInjectedController {
-	private GreetingService greetingService;
+	private GreetingServiceIfc greetingService;
 	
 	@Qualifier("setterGreetingService")
 	@Autowired
-	public void setGreetingService(GreetingService greetingService) {
+	public void setGreetingService(GreetingServiceIfc greetingService) {
 		this.greetingService = greetingService;
 	}
 	
